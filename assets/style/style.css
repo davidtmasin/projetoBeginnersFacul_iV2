@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MENU */
+header{
+    background-color: tomato;
+    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header nav{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover{
+    color: black;
+}
+
+/* SECTIONs */
+.sections{
+    width: 80%;
+    margin: auto;
+    padding: 32px;
+}
+
+.sections h2{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.sections p{
+    font-size: 22px;
+}
+
+.sections h3{
+    font-size: 20px;
+}
+/* Cursos */
+#courses div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#courses .course{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 280px;
+    padding: 16px;
+    border-radius: 3px;
+}
+
+#courses div p{
+    font-size: 16px;
+}
+
+#courses div a{
+    background-color: tomato;
+	text-align: center;
+	padding: 16px 0;
+	margin-top: 16px;
+	border-radius: 4px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+#courses div a:hover{
+    opacity: 0.9;
+}
+
+/* Galeria */
+#team div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#team img {
+    width: 300px;
+}
+
+#team img:hover {
+    box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: tomato;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer iframe {
+    width: 100%;
+    height: 300px;
+}
