@@ -25,7 +25,7 @@ header nav a{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 header nav a:hover{
@@ -34,7 +34,7 @@ header nav a:hover{
 
 /* SECTIONs */
 .sections{
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 32px;
 }
@@ -44,16 +44,17 @@ header nav a:hover{
 }
 
 .sections #description{
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
-    line-height: 1.6;    
-    
+    line-height: 1.6; 
 }
+
 .sections #my-photo{
     padding: 0 0 20px 0;
 }
+
 .sections #my-photo img{
-    width: 300px;
+    width: 350px;
     display: block;
     margin: auto;
     border: 2px solid black;
@@ -62,16 +63,22 @@ header nav a:hover{
 
 
 .description{
-    background-color: #5DABFA;
-    padding: 30px;
-    border-radius: 10px;
-    color: white;
+    background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm314-adj-08-g.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a0cc1267140993745dab1fabead42a9b');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    border-radius: 10px;    
     box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.2);
+}
+
+#description{
+    color:black;
+    font-weight: 360;
 }
 
 .sections h2{
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 .sections p{
@@ -82,58 +89,24 @@ header nav a:hover{
     font-size: 20px;
 }
 
-/* Cursos */
-/* #courses div{
-    display: flex;
-    justify-content: space-between;
-}
-
-#courses .course{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 280px;
-    padding: 16px;
-    border-radius: 3px;
-}
-
-#courses div p{
-    font-size: 16px;
-}
-
-#courses div a{
-    background-color: tomato;
-	text-align: center;
-	padding: 16px 0;
-	margin-top: 16px;
-	border-radius: 4px;
-	color: white;
-	text-decoration: none;
-	font-size: 18px;
-}
-
-#courses div a:hover{
-    opacity: 0.9;
-}*/
-
 /* Logos */
 .sections h2{
-    font-size: 32px;
+    font-size: 50px;
 }
 
-#logos div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 12px 12px;
+.tecnhologies{
+    text-align: center;
 }
-#logos .top{
+
+#logos tecnhologies {
+    display: inline-block;
+    padding: 12px 12px;
     padding-bottom: 25px;
 }
 
 #logos img {
-    width: 200px;
+    width: 150px;
+    padding: 10px;
 }
 
 #logos img:hover {
@@ -143,7 +116,10 @@ header nav a:hover{
 
 /* Extra - calculadora de conversão */
 .container-form{
-	background: #5DABFA;
+	/* background: #5DABFA; */
+    border: 2px solid black;
+    background: url('https://images-na.ssl-images-amazon.com/images/I/71hh0FN2%2BBL.png');
+    background: cover;
 	padding-bottom: 10px;
 	width: 40vh;
 	margin: 0 auto;	
@@ -153,26 +129,57 @@ header nav a:hover{
 .container-form h4{
     text-align: center;
     padding-top: 10px;
-    color: white;
+    color: tomato;
+    font-size: 25px;
 }
 
 .container-form > form{
-	padding-top: 12px;
+	padding-top: 20px;
 	text-align: center;	
 }
 
 .container-form .lb-nome{
-	color: white;
-	font-weight: bold;
+	color: black;
+    font-size: 22px;
+	font-weight: 700;
 }
 
-.container-form input[type=text], input[type=button]{
+.container-form input[type=text]{
 	border-radius: 10px;
 	height: 30px;   
+    width: 80%;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.container-form #labelDolar{
+	color: black;
+}
+
+.container-form .real{
+    height: 30px;   
+    width: 80%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.container-form #dolar{
+    color: #008641;
+    font-size: 20px;
+}
+
+.container-form #resultado{
+    color: #c3000d;
+    font-size: 20px;
 }
 
 .container-form input[type=button]{
     width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 800;
 }
 
 
@@ -181,28 +188,20 @@ header nav a:hover{
 
 footer {
     width: 100%;
-    /* background-color: #45dbfc; */
     padding: 5px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     margin-top: 30px;
 }
 
 footer iframe {
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 #footer{
     margin: 10px 0 0 0;
-    font-size: 16px;
+    font-size: 12px;
 }
 
-/* #class {
-    text-decoration: none;
-    color: white;
-    background-color: tomato;
-    padding: 8px;
-    border-radius: 3px;
-} */
