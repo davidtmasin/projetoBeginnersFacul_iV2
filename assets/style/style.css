@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* MENU */
 header{
-    background-color: tomato;
+    background-color: #45dbfc;
     padding: 24px;
     width: 100%;
     box-sizing: border-box;
@@ -24,6 +24,7 @@ header nav{
 header nav a{
     color: white;
     text-decoration: none;
+    font-weight: bold;
     font-size: 18px;
 }
 
@@ -38,6 +39,36 @@ header nav a:hover{
     padding: 32px;
 }
 
+.sections #name{
+    font-size: 35px;
+}
+
+.sections #description{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;    
+    
+}
+.sections #my-photo{
+    padding: 0 0 20px 0;
+}
+.sections #my-photo img{
+    width: 300px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.description{
+    background-color: #5DABFA;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.2);
+}
+
 .sections h2{
     text-align: center;
     margin-bottom: 32px;
@@ -50,8 +81,9 @@ header nav a:hover{
 .sections h3{
     font-size: 20px;
 }
+
 /* Cursos */
-#courses div{
+/* #courses div{
     display: flex;
     justify-content: space-between;
 }
@@ -83,32 +115,78 @@ header nav a:hover{
 
 #courses div a:hover{
     opacity: 0.9;
+}*/
+
+/* Logos */
+.sections h2{
+    font-size: 32px;
 }
 
-/* Galeria */
-#team div {
+#logos div {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12px 12px;
+}
+#logos .top{
+    padding-bottom: 25px;
 }
 
-#team img {
-    width: 300px;
+#logos img {
+    width: 200px;
 }
 
-#team img:hover {
+#logos img:hover {
     box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.2);
+} 
+
+
+/* Extra - calculadora de conversão */
+.container-form{
+	background: #5DABFA;
+	padding-bottom: 10px;
+	width: 40vh;
+	margin: 0 auto;	
+	border-radius: 10px;	
 }
+
+.container-form h4{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.container-form > form{
+	padding-top: 12px;
+	text-align: center;	
+}
+
+.container-form .lb-nome{
+	color: white;
+	font-weight: bold;
+}
+
+.container-form input[type=text], input[type=button]{
+	border-radius: 10px;
+	height: 30px;   
+}
+
+.container-form input[type=button]{
+    width: 80px;
+}
+
 
 
 /* Footer */
 
 footer {
     width: 100%;
-    background-color: tomato;
-    padding: 32px;
+    /* background-color: #45dbfc; */
+    padding: 5px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 footer iframe {
@@ -116,10 +194,15 @@ footer iframe {
     height: 300px;
 }
 
-#class {
+#footer{
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
+
+/* #class {
     text-decoration: none;
     color: white;
     background-color: tomato;
     padding: 8px;
     border-radius: 3px;
-}
+} */
