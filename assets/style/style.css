@@ -64,7 +64,7 @@ header nav a:hover{
 }
 
 .sections #my-photo img{
-    width: 350px;
+    width: 650px;
     display: block;
     margin: auto;
     border: 2px solid black;
@@ -283,6 +283,11 @@ footer iframe {
 
     #message{
         font-size: 20px; 
+    }
+
+    .sections #my-photo img{
+        width: 
+        450px;
     }
 
 }
