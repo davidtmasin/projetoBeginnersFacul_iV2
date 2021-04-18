@@ -6,6 +6,12 @@
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
+body{
+    background: url('https://static.wixstatic.com/media/2f2c48_a7f6abcd87d14bd2a5b7f49d11f20c22~mv2.gif');
+    background: cover;
+    background: no-repeat;
+}
+
 /* MENU */
 header{
     background-color: #45dbfc;
@@ -15,7 +21,7 @@ header{
 }
 
 header nav{
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -25,7 +31,7 @@ header nav a{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 header nav a:hover{
@@ -34,10 +40,12 @@ header nav a:hover{
 
 /* SECTIONs */
 .sections{
-    width: 90%;
+    box-sizing: border-box;
+    width: 100%;
     margin: auto;
     padding: 32px;
 }
+
 
 .sections #name{
     font-size: 35px;
@@ -45,8 +53,10 @@ header nav a:hover{
 
 .sections #description{
     font-size: 16px;
+    padding: 20px;
     text-align: justify;
     line-height: 1.6; 
+    font-weight: 400;
 }
 
 .sections #my-photo{
@@ -63,18 +73,21 @@ header nav a:hover{
 
 
 .description{
-    background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm314-adj-08-g.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a0cc1267140993745dab1fabead42a9b');
-    background-repeat: no-repeat;
+    background: url('https://image.freepik.com/vetores-gratis/fundo-de-tecnologia-hud-abstrato-azul_52683-21166.jpg');
+    /* background-repeat: no-repeat; */
     background-size: cover;
+    color: white;
     padding: 15px;
     border-radius: 10px;    
     box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 #description{
-    color:black;
-    font-weight: 360;
+    background: rgba(0, 0, 0, 0.5);
 }
+
+
 
 .sections h2{
     text-align: center;
@@ -104,25 +117,31 @@ header nav a:hover{
     padding-bottom: 25px;
 }
 
+#logos a{
+    text-decoration: none;
+}
+
 #logos img {
     width: 150px;
     padding: 10px;
+    transition: all ease 0.5s;
 }
 
 #logos img:hover {
-    box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 3px 40px 10px rgba(0, 0, 0, 0.2); */
+    opacity: 0.5;
+    transform: scale(1.2) translateY(-10px);
 } 
 
 
 /* Extra - calculadora de conversão */
 .container-form{
-    box-sizing: border-box;
-	/* background: #5DABFA; */
+    
     border: 2px solid black;
-    background: url('https://images-na.ssl-images-amazon.com/images/I/71hh0FN2%2BBL.png');
-    background: cover;
+    background-color: #008641;
+    
 	padding-bottom: 10px;
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;	
 	border-radius: 10px;	
 }
@@ -131,58 +150,57 @@ header nav a:hover{
     text-align: center; 
     padding: 10px 0;
     border-radius: 10px;
-    color: tomato;
+    color: white;
     background:black;
-    font-size: 25px;
+    font-size: .88rem;
 }
 
 .container-form > form{
-	padding-top: 20px;
+	padding-top: 25px;
 	text-align: center;	
 }
 
 .container-form .lb-nome{
-	color: black;
-    font-size: 22px;
+	color: white;
+    font-size: 35px;
 	font-weight: 700;
 }
 
 .container-form input[type=text]{
 	border-radius: 10px;
-	height: 30px;   
-    width: 80%;
+	height: 50px;   
+    width: 50%;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
 
 }
 
 .container-form #labelDolar{
-	color: black;
+	color: white;
 }
 
 .container-form .real{
-    height: 30px;   
-    width: 80%;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .container-form #dolar{
     color: #008641;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .container-form #resultado{
     color: #c3000d;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .container-form input[type=button]{
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 8px;
     text-align: center;
     font-weight: 800;
+    font-size: 30px;
 }
 
 
@@ -196,6 +214,7 @@ footer {
     /* display: flex;
     justify-content: space-between; */
     margin-top: 30px;
+    
 }
 
 footer iframe {
@@ -209,6 +228,61 @@ footer iframe {
 }
 
 #footer{
-    margin: 10px 0 0 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 10px;
     font-size: 12px;
+}
+
+
+@media only screen and (min-width: 991px){
+
+    .sections{
+        width: 60%;
+    }
+
+    .sections #description{
+        font-size: 20px;
+    }
+
+    header nav{
+        width: 50%;
+    }
+
+    header nav a{
+        font-size: 22px;
+    }
+
+    .container-form h4{
+        font-size: 2.1rem;
+    }
+
+    .container-form .lb-nome{
+        font-size: 35px;
+    }
+    
+    .container-form input[type=text]{
+        height: 40px;   
+        width: 40%;    
+    }
+    
+    .container-form #dolar{
+        font-size: 30px;
+    }
+    
+    .container-form #resultado{
+        font-size: 30px;
+    }
+    
+    .container-form input[type=button]{
+        width: 150px;
+        height: 50px;
+        
+        font-size: 28px;
+    }
+
+    #message{
+        font-size: 20px; 
+    }
+
 }
